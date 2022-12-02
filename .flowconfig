@@ -1,0 +1,26 @@
+[ignore]
+.*/node_modules/babel-plugin-flow-runtime
+.*/node_modules/flow-runtime
+.*/node_modules/npm
+.*/node_modules/jsonlint
+.*/node_modules/**/test
+.*/node_modules/resolve
+.*/dist/module
+.*/flow-typed/npm/puppeteer_v1.20.x.js
+[include]
+[libs]
+flow-typed
+node_modules/@krakenjs/zoid/src/declarations.js
+node_modules/@krakenjs/post-robot/src/declarations.js
+node_modules/@paypal/sdk-client/src/declarations.js
+src/declarations.js
+test/declarations.js
+[options]
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.jsx
+module.file_ext=.css
+module.file_ext=.scss
+module.name_mapper='^src\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+module.name_mapper='.*\(.scss\)' -> 'CSSModule'
+experimental.const_params=false

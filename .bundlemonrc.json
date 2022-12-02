@@ -1,0 +1,21 @@
+{
+  "baseDir": "./dist",
+  "files": [
+    {
+      "path": "size.min.js",
+      "compression": "gzip",
+      "maxPercentIncrease": 3,
+      "maxSize": "76kb"
+    }
+  ],
+  "reportOutput": [
+    [
+      "github",
+      {
+        "checkRun": true,
+        "commitStatus": false,
+        "prComment": false
+      }
+    ]
+  ]
+}
